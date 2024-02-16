@@ -1,0 +1,233 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+
+body{
+    display: flex;
+    height: 100vh;
+    width: calc(100%-20px);
+    outline: none;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url("https://wallpaperset.com/w/full/5/4/e/25566.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: mainbgzoom ease-in-out 20s forwards alternate-reverse infinite;
+}
+
+.maincontainer{
+    padding:2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 45vh;
+    
+    width:60%;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background: url("https://www.campliveoakfl.com/wp-content/uploads/2015/02/Stars.jpg");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top; */
+    backdrop-filter: blur(2px) brightness(1.25);
+    
+    box-shadow: 0px 3px 15px 1px #000;
+
+    box-sizing: border-box;
+
+
+}
+
+
+.login,.signup{
+    border-radius: 15px;
+    margin: 15px;
+    
+    
+    height:90%;
+    width: 50%;
+    border: 2px solid red;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-flow: column;
+    transition: all 0.3s;
+    animation: bgzoom ease-in-out 15s alternate-reverse forwards infinite;
+}
+
+.login:hover,.signup:hover{
+    
+    box-shadow: 0px 3px 15px 2px rgb(101, 106, 111);
+    justify-content:space-between;
+
+
+}
+
+
+.login,.signup{
+    border: none;
+    background: url("https://wallpapercave.com/wp/64aV1cA.jpg");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+    box-shadow: 0px 3px 15px 1px #000;
+    padding: 1.8rem;
+    box-sizing: border-box;
+}
+.signup{
+    background: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.login--image,.register--image{
+    border-radius:15px;
+    color: whitesmoke;
+    box-shadow: 0px 3px 15px 1px black;
+    max-height: 7rem;
+    text-align: center;
+    backdrop-filter: blur(7px);
+    background-color: transparent;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: transparent;   
+    box-sizing: border-box;
+    
+    
+    
+    
+    
+}
+
+#LOGIN123,#REGISTER123{
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 1.8rem;
+    color: white;
+    transition: all 1s;
+    background-image:linear-gradient(to right , #eae6e2, #0fb7b7,#20ca80);
+    background-size: 5rem 5rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    animation: change-color infinite 2s normal forwards;
+
+
+}
+#REGISTER123{
+    animation: change-color infinite 0.01s normal forwards alternate-reverse;
+}
+
+#login--text , #register--text{
+    font-family:sans-serif;
+    font-weight: bold;
+    margin: 10px;
+    overflow: auto;
+    
+    
+}
+
+
+
+.forloginbutton,.forregbutton{
+    width: 100%;
+    text-align: center;
+}
+#loginb123,#registerb123,#loginb223,#backb223{
+    height: 3.8vh;
+    /* width: clamp(50px, 50%, 150px); */
+    min-width: 30px;
+    width: 50%;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right,#9c35e6,#21a0e9, #23dfd9);
+    background-size: 500px 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    scale: 0.925;
+    transition: all 0.3s;
+    box-shadow: 0px 3px 15px 1px #000;
+    overflow: hidden;
+}
+#registerb123{
+    min-width: 50px;
+    width: 80%;
+    overflow: hidden;
+}
+#loginb123:hover,#registerb123:hover,#loginb223:hover,#backb223:hover{
+    background-position: left;
+    box-shadow: 0px 5px 25px 1px #48afac;
+}  
+
+#loginb123:active,#registerb123:active{
+    background-position:right;
+    scale: 0.7;
+}  
+
+
+
+
+
+
+
+
+
+
+@keyframes change-color {
+    0%,100%{
+        background-position:top left;
+    }
+    40%{
+        background-position: center;
+    }    
+
+    60%{
+        background-position:top right;
+    }
+
+    80%{
+        background-position:bottom;
+    }
+
+   
+
+}
+
+@keyframes bgzoom {
+    0%,100%{
+        background-size: 150%;
+    }
+
+    50%{
+        background-size: 175%;
+    }
+    
+}
+
+@keyframes mainbgzoom {
+    0%,100%{
+        background-position: top;
+    }
+
+    50%{
+        background-position: bottom;
+    }
+    
+}
+
